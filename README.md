@@ -1,10 +1,53 @@
 # flutter_viking_student
 
-A new Flutter project.
+A Dart (and eventually Dart+Flutter) project to implemebt the viking chess game (actually a family of games).
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This project is a starting point for a Dart implementation of viking chess.
+
+## assigment #1
+
+- Complete the SeaBattle ctors (viz., SeaBattle9x9, SeaBattle11x11, SeaBattle13x13, and SeaBattle15x15).
+- Complete toString in VikingModel. It should return (not print) a string that looks something like the following
+when printed:
+          Instance of 'SeaBattle9x9', rows: 9, cols: 9, turn: Player.attacker
+            012345678
+          0 ....a....
+          1 .a..a..a.
+          2 ..a...a..
+          3 ...DDD...
+          4 aa.DKD.aa
+          5 ...DDD...
+          6 ..a...a..
+          7 .a..a..a.
+          8 ....a....
+
+            012345678
+          0 eeeeeeeee
+          1 e.......e
+          2 e.......e
+          3 e.......e
+          4 e.......e
+          5 e.......e
+          6 e.......e
+          7 e.......e
+          8 eeeeeeeee
+
+          Instance of 'SeaBattle9x9', rows: 9, cols: 9, turn: Player.attacker
+            012345678    012345678
+          0 ....a....    eeeeeeeee
+          1 .a..a..a.    e.......e
+          2 ..a...a..    e.......e
+          3 ...DDD...    e.......e
+          4 aa.DKD.aa    e.......e
+          5 ...DDD...    e.......e
+          6 ..a...a..    e.......e
+          7 .a..a..a.    e.......e
+          8 ....a....    eeeeeeeee
+
+
+
 
 A few resources to get you started if this is your first Flutter project:
 
