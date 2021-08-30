@@ -11,6 +11,7 @@ This project is a starting point for a Dart implementation of viking chess.
 - Complete the SeaBattle ctors (viz., SeaBattle9x9, SeaBattle11x11, SeaBattle13x13, and SeaBattle15x15).
 - Complete toString in VikingModel. It should return (not print) a string that looks something like the following
 when printed:
+
           Instance of 'SeaBattle9x9', rows: 9, cols: 9, turn: Player.attacker
             012345678
           0 ....a....
