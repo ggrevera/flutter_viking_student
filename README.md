@@ -49,7 +49,7 @@ Or even better:
           7 .a..a..a.    e.......e
           8 ....a....    eeeeeeeee
 
-Or even more [sic] better:
+Or even more [sic] better: ![Alt text](https://assets.digitalocean.com/articles/alligator/boo.svg "a title")
 
 - [Lab: Write your first Flutter app](https://raw.githubusercontent.com/ggrevera/flutter_viking_student/master/example-tostring-output.png)
 
