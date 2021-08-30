@@ -51,4 +51,4 @@ Or even better:
 
 Or even more [sic] better:
 
-          ![Alt text](./example-tostring-output.png "a title")
+![Alt text](./example-tostring-output.png "a title")
