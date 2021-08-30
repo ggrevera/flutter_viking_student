@@ -35,7 +35,9 @@ when printed (or saved to a text file, or transmitted around the world and viewe
           7 e.......e
           8 eeeeeeeee
 
+
 Or even better:
+
 
           Instance of 'SeaBattle9x9', rows: 9, cols: 9, turn: Player.attacker
             012345678    012345678
