@@ -9,8 +9,12 @@ This project is a starting point for a Dart implementation of viking chess.
 ## assigment #1
 
 - Complete the SeaBattle ctors (viz., SeaBattle9x9, SeaBattle11x11, SeaBattle13x13, and SeaBattle15x15).
+  Use [these rules](./sea_battle_rules.pdf) as a reference.
 - Complete toString in VikingModel. It should return (not print) a string that looks something like the following
-when printed (or saved to a text file, or transmitted around the world and viewed with a text editor):
+when printed (or saved to a text file, or transmitted around the world and viewed with a text editor). Note that
+  two things need to be displayed: (a) the actual pieces on the board, and (b) the underlying board itself. In the
+  first figure below, the top represent the pieces on the board and the bottom represents the board. In the second 
+  figure below, they appear side-by-side.
 ```
           Instance of 'SeaBattle9x9', rows: 9, cols: 9, turn: Player.attacker
             012345678
@@ -35,7 +39,7 @@ when printed (or saved to a text file, or transmitted around the world and viewe
           7 e.......e
           8 eeeeeeeee
 ```
-Or even better:
+Or even better (and for full credit):
 ```
           Instance of 'SeaBattle9x9', rows: 9, cols: 9, turn: Player.attacker
             012345678    012345678
@@ -49,6 +53,8 @@ Or even better:
           7 .a..a..a.    e.......e
           8 ....a....    eeeeeeeee
 ```
-Or even more [sic] better:
+Or even more [sic] better (by embedding controls sequences provided in [terminal.dart](./lib/terminal.dart) in the string):
 
 ![Alt text](./example-tostring-output.png "a title")
+
+The above is challenging. It is NOT required. It is for extra credit (and my undying admiration) only.
