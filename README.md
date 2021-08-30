@@ -1,6 +1,6 @@
 # flutter_viking_student
 
-A Dart (and eventually Dart+Flutter) project to implemebt the viking chess game (actually a family of games).
+A Dart (and eventually Dart+Flutter) project to implement the viking chess game (actually a family of games).
 
 ## Getting Started
 
@@ -51,7 +51,7 @@ Or even better:
 
 Or even more [sic] better:
 
-- [Lab: Write your first Flutter app](example-tostring-output.png)
+- [Lab: Write your first Flutter app](https://raw.githubusercontent.com/ggrevera/flutter_viking_student/master/example-tostring-output.png)
 
 A few resources to get you started if this is your first Flutter project:
 
