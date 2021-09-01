@@ -77,5 +77,6 @@ Or even more better [sic], (by embedding controls sequences provided in
 
 The "colorized" example directly above is challenging. It is NOT required. It is for extra 
 credit (and my undying respect and admiration) only.
+
 ---
 ### assigment #2: coming soon
