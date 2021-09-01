@@ -68,6 +68,7 @@ class SeaBattle9x9 extends SeaBattle {
   ///todo students assn 1
   SeaBattle9x9 ( ) : super(9, 9) {
     //place attackers
+    pieces[0][4] = Piece.attack;  // <-- i'll get you started.
 
     //place defenders
 

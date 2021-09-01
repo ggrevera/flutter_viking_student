@@ -18,7 +18,6 @@ const String edgeWinnerBg  = '\x1b[30;102m';
 const String unavailableBg = '\x1b[30;41m';
 const String whiteBg       = '\x1b[30;107m';
 
-
 //example usage:
 //  final String greenBg = '\x1b[30;42m';
 //  print( '${greenBg}hello${whiteBg}' );
