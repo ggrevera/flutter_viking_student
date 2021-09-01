@@ -1,7 +1,9 @@
 # flutter_viking_student
 
 A Dart (and eventually Dart+Flutter) project to implement the viking chess game 
-(actually a family of games).
+(actually a family of games, see below).
+
+![viking game family tree](./games.png)
 
 ## Getting started
 
@@ -73,10 +75,11 @@ Or even better (and for full credit):
 Or even more better [sic], (by embedding controls sequences provided in
 [terminal.dart](./lib/terminal.dart) in the string):
 
-![Alt text](./example-tostring-output.png "a title")
+![example of more sophisticated toString result](./example-tostring-output.png)
 
 The "colorized" example directly above is challenging. It is NOT required. It is for extra 
 credit (and my undying respect and admiration) only.
 
 ---
 ### assigment #2: coming soon
+
