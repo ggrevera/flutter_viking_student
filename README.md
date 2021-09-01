@@ -11,6 +11,7 @@ on the project has already created a framework for the logic behind the game
 for you to use. She has also created a way for you to exercise your code from
 the good old command line while she continues to work on the GUI (based on 
 Flutter).
+
 ---
 ### assigment #1: set up Sea Battle
 
