@@ -1,6 +1,6 @@
 # flutter_viking_student
 
-A Dart (and eventually Dart+Flutter) project to implement the viking chess game 
+A Dart (and eventually Dart+Flutter) project to implement the viking chess game
 (actually a family of games, see below).
 
 ![viking game family tree](./games.png)
@@ -9,26 +9,26 @@ A Dart (and eventually Dart+Flutter) project to implement the viking chess game
 
 You start working at your first job on a family of iboard games based on viking chess.
 Your first assignment is to work on the Sea Battle game, specifically. The lead architect
-on the project has already created a framework for the logic behind the game 
+on the project has already created a framework for the logic behind the game
 for you to use. She has also created a way for you to exercise your code from
-the good old command line while she continues to work on the GUI (based on 
+the good old command line while she continues to work on the GUI (based on
 Flutter).
 
 ---
-### assigment #1: set up Sea Battle
+### assignment #1: set up Sea Battle
 
-- Complete the [SeaBattle](./lib/SeaBattle.dart) __ctors__ (viz., SeaBattle9x9, SeaBattle11x11, 
+- Complete the [SeaBattle](./lib/SeaBattle.dart) __ctors__ (viz., SeaBattle9x9, SeaBattle11x11,
   SeaBattle13x13, and SeaBattle15x15).
   Use [these rules](./sea_battle_rules.pdf) as a reference.
 
-- Complete toString in [VikingModel](./lib/VikingModel.dart). It should return (not print) a string that 
+- Complete toString in [VikingModel](./lib/VikingModel.dart). It should return (not print) a string that
   looks something like the following when printed (or saved to a text file, or
-  transmitted around the world and viewed with a browser or a text editor). 
-  These are just examples below. Your string does not have to be exactly like 
-  them. Anything reasonable is acceptable. All fields and their corresponding 
+  transmitted around the world and viewed with a browser or a text editor).
+  These are just examples below. Your string does not have to be exactly like
+  them. Anything reasonable is acceptable. All fields and their corresponding
   values should be represented.
   Note that what we consider to be 'the board' actually consists of two components:
-  (a) the actual pieces on the board, and 
+  (a) the actual pieces on the board, and
   (b) the underlying board itself.
   In the first figure below, the top represent
   the pieces on the board and the bottom represents the underlying board.
@@ -77,9 +77,9 @@ Or even more better [sic], (by embedding controls sequences provided in
 
 ![example of more sophisticated toString result](./example-tostring-output.png)
 
-The "colorized" example directly above is challenging. It is NOT required. It is for extra 
+The "colorized" example directly above is challenging. It is NOT required. It is for extra
 credit (and my undying respect and admiration) only.
 
 ---
-### assigment #2: coming soon
+### assignment #2: coming soon
 
