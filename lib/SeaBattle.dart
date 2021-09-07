@@ -31,6 +31,7 @@ import 'package:flutter_viking_student/VikingModel.dart';
 ///       board layouts may indicate otherwise).
 abstract class SeaBattle extends StrongKing {
 
+  //throne = no; corner exits = no
   SeaBattle(int rows, int cols) : super(rows, cols, false, false);
 
   // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
