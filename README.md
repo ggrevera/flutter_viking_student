@@ -93,7 +93,12 @@ credit (and my undying respect and admiration) only.
 ---
 ### assignment #2: the power of inheritance!
 1. Other individuals at GH&trade; have been hard at work on other parts of the project.
-   To incorporate their changes with your code, you need to first run Android Studio,
+   Before you can incorporate their changes (on the remote repo), you must commit (save) your
+   changes to your local repo. Run Android Studio, open your project (if it's not
+   already open) and then select Commit from the Git menu.
+   Enter 'finished assignment #1' in the Commit Message area, and then press Commit.
+   If prompted for you email, enter it.
+1. To incorporate the changes on the remote repo with your code, you need to first run Android Studio,
    open your project, and then select Pull... from the Git menu.
    This will update your code with their changes.
    Make sure that you can run your code without any errors before proceeding.
