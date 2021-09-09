@@ -1,0 +1,34 @@
+
+//Viking Game Family Tree
+
+//generate with:
+//  "c:\Users\ggrevera\Google Drive\private\systems-solutions\graphviz\bin\dot" -Tpng -o games2.png games2.dot
+
+digraph D {
+    ratio = 0.4;
+
+    "VikingModel\n(abstract)" -> "StrongKing\n(abstract)"   [penwidth=5]
+        "StrongKing\n(abstract)" -> "SeaBattle\n(abstract)" [penwidth=5]
+            "SeaBattle\n(abstract)" -> SeaBattle9x9         [penwidth=5]
+            "SeaBattle\n(abstract)" -> SeaBattle11x11       [penwidth=5]
+            "SeaBattle\n(abstract)" -> SeaBattle13x13       [penwidth=5]
+            "SeaBattle\n(abstract)" -> SeaBattle15x15       [penwidth=5]
+        "StrongKing\n(abstract)" -> "Berserk"
+        "StrongKing\n(abstract)" -> "Copenhagen"
+        "StrongKing\n(abstract)" -> "Fetlar"
+        "StrongKing\n(abstract)" -> "OldHnefatafl"
+    "VikingModel\n(abstract)" -> "WeakKing\n(abstract)"     [penwidth=5]
+    "WeakKing\n(abstract)" -> "Historical\n(abstract)"      [penwidth=5]
+        "Historical\n(abstract)" -> ArdRi7x7                [penwidth=5]
+        "Historical\n(abstract)" -> Brandubh7x7             [penwidth=5]
+        "Historical\n(abstract)" -> Historical7x7           [penwidth=5]
+        "Historical\n(abstract)" -> Historical9x9           [penwidth=5]
+        "Historical\n(abstract)" -> Historical11x11         [penwidth=5]
+        "Historical\n(abstract)" -> Historical13x13         [penwidth=5]
+        "Historical\n(abstract)" -> Historical15x15         [penwidth=5]
+    "WeakKing\n(abstract)" -> "TyrHnefatafl11x11"
+    "WeakKing\n(abstract)" -> "TyrHnefatafl15x15"
+    "WeakKing\n(abstract)" -> "SimpleTyr11x11"
+    "WeakKing\n(abstract)" -> "SimpleTyr15x15"
+    "WeakKing\n(abstract)" -> "AleaEvangelii19x19"
+}

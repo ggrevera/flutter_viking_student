@@ -2,9 +2,10 @@
 //Viking Game Family Tree
 
 //generate with:
-//  "c:\Users\ggrevera\Google Drive\private\\systems-solutions\graphviz\bin\dot" -Tpng -o games.png games.dot
+//  "c:\Users\ggrevera\Google Drive\private\systems-solutions\graphviz\bin\dot" -Tpng -o games.png games.dot
 
 digraph D {
+    ratio = 0.4;
 
     "VikingModel\n(abstract)" -> "StrongKing\n(abstract)" [penwidth=5]
         "StrongKing\n(abstract)" -> "SeaBattle\n(abstract)" [penwidth=5]
