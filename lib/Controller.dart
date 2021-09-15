@@ -100,6 +100,7 @@ class Controller {
         // ignore: INVALID_USE_OF_PROTECTED_MEMBER
         state.setState(() {
           bool ok = state.model.performMove( state.clicks[0].r, state.clicks[0].c, state.clicks[1].r, state.clicks[1].c );
+          print( state.model );
           if (!ok) {
             ScaffoldMessengerState scaffold = ScaffoldMessenger.of( ctx );
             scaffold.showSnackBar(
