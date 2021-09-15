@@ -95,11 +95,11 @@ credit (and my undying respect and admiration) only.
 1. Other individuals at GH&trade; have been hard at work on other parts of the project.
    Before you can incorporate their changes (on the remote repo), you must commit (save) your
    changes to your local repo. Run Android Studio, open your project (if it's not
-   already open), and then select Commit from the Git menu.
-   Enter 'finished assignment #1' in the Commit Message area, and then press Commit.
-   If prompted for your email, enter it. Press the Commit button if asked about warnings.
+   already open), and then select _Commit_ from the Git menu.
+   Enter 'finished assignment #1' in the _Commit Message_ area, and then press _Commit_.
+   If prompted for your email, enter it. Press the _Commit_ button if asked about warnings.
 1. To incorporate the changes on the remote repo with your code, you need to first run Android Studio,
-   open your project, and then select Pull... from the Git menu.
+   open your project, and then select _Pull..._ from the Git menu.
    This will update your code with their changes.
    Make sure that you can run your code without any errors before proceeding.
    (If you have errors after the pull, please contact me.)
@@ -132,5 +132,49 @@ We are going to concentrate on the game logic in the future.
 <img alt="(updated viking game family tree)" src="./games2.png"     width="100%" />
 
 ---
+### assignment #3: is a move acceptable or not?
+Before we can actually perform a move, we must ensure that the move is acceptable.
+Begin working on isMoveOk in VikingModel. **This function does not perform the move 
+(i.e., it does not modify any data).** 
+it simply returns true or false to indicate whether or not it is acceptable.
+Here are situations that you should handle:
+1. As (what will become) usual, commit your changes to your local repo as follows.
+   Run Android Studio, open your project (if it's not
+   already open), and then select Commit from the Git menu.
+   Enter 'finished assignment #2' in the Commit Message area, and then press Commit.
+   If prompted for your email, enter it. Press the Commit button if asked about warnings.
+   To incorporate any changes on the remote repo with your code, you need to first run Android Studio,
+   open your project, and then select Pull... from the Git menu.
+   This will update your code with any changes.
+   Make sure that you can run your code without any errors before proceeding.
+1. Out-of-bounds moves are not ok.
+1. One may only move a piece of the type that corresponds to the current turn.
+1. One cannot move onto (on top of) an existing piece.
+1. One may only move horizontally or vertically (never diagonally, etc.).
+   (Note: The next assignment will have you modify this to disallow moves through
+   intervening pieces. This situation may be ignored for this assignment.)
 
+Of course you should also include more mundane "sanity checks" of your own as well.
+The next assignment will add additional rules.
+Don't forget to comment your code (or else).
+
+---
+### assignment #4: modify isMoveOk (in VikingModel) to handle the following:
+1. As usual, commit your changes to your local repo as follows.
+   Run Android Studio, open your project (if it's not
+   already open), and then select Commit from the Git menu.
+   Enter 'finished assignment #3' in the Commit Message area, and then press Commit.
+   If prompted for your email, enter it. Press the Commit button if asked about warnings.
+   To incorporate any changes on the remote repo with your code, you need to first run Android Studio,
+   open your project, and then select Pull... from the Git menu.
+   This will update your code with any changes.
+   Make sure that you can run your code without any errors before proceeding.
+1. It is _not_ ok to allow moves after the game is over.
+1. One cannot move through/jump over piece(s).
+1. Only the king may occupy the throne (in games that have a throne). 
+   (But other pieces are free to move through it when unoccupied.)
+1. Only the king may occupy a corner exit (in games that have corner exits).
+
+---
+### assignment #5: coming soon!
 
