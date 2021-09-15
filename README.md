@@ -132,18 +132,41 @@ We are going to concentrate on the game logic in the future.
 <img alt="(updated viking game family tree)" src="./games2.png"     width="100%" />
 
 ---
-### assignment #3: is a move acceptable or not?
-Before we can actually perform a move, we must ensure that the move is acceptable.
-Begin working on isMoveOk in VikingModel. **This function does not perform the move 
-(i.e., it does not modify any data).** 
-it simply returns true or false to indicate whether or not it is acceptable.
-Here are situations that you should handle:
+### assignment #3: add the gui (graphical user interface)
 1. As (what will become) usual, commit your changes to your local repo as follows.
    Run Android Studio, open your project (if it's not
    already open), and then select Commit from the Git menu.
    Enter 'finished assignment #2' in the Commit Message area, and then press Commit.
    If prompted for your email, enter it. Press the Commit button if asked about warnings.
-   To incorporate any changes on the remote repo with your code, you need to first run Android Studio,
+2. **Make a copy of your work.**
+   Others at GH&trade; have been hard at work on the gui and now it's ready! Before you
+   add the new gui code to yours, make sure that you make a copy of the entire project 
+   directory (folder) _before_ you pull from the repo.
+3. To incorporate changes on the remote repo with your code, you need to first run Android Studio,
+   open your project, and then select Pull... from the Git menu.
+   This will update your code with any changes.
+4. Before you can run **main.dart** in lib for the new ui, you need to **Get dependencies** first.
+   So do **Get dependencies** or **Tools --> Flutter --> Flutter Pub Get**.
+5. Before you can run the new gui, change **<no device selected>** to a specific device. You 
+   are only required to get one device working. Devices include windows desktop, 
+   mac desktop, android phone or table, apple phone or tablet, or android device emulator.
+6. Run main.dart. Take a screen capture and save it in a file. That's it!
+
+Notes: Ignore the message **Flutter device frame rate invalid** if it appears.
+
+---
+### assignment #4: is a move acceptable or not?
+Before we can actually perform a move, we must ensure that the move is acceptable.
+Begin working on isMoveOk in VikingModel. **This function does not perform the move 
+(i.e., it does not modify any data).** 
+it simply returns true or false to indicate whether or not it is acceptable.
+Here are situations that you should handle:
+1. As usual, commit your changes to your local repo as follows.
+   Run Android Studio, open your project (if it's not
+   already open), and then select Commit from the Git menu.
+   Enter 'finished assignment #3' in the Commit Message area, and then press Commit.
+   If prompted for your email, enter it. Press the Commit button if asked about warnings.
+1. To incorporate any changes on the remote repo with your code, you need to first run Android Studio,
    open your project, and then select Pull... from the Git menu.
    This will update your code with any changes.
    Make sure that you can run your code without any errors before proceeding.
@@ -159,7 +182,7 @@ The next assignment will add additional rules.
 Don't forget to comment your code (or else).
 
 ---
-### assignment #4: modify isMoveOk (in VikingModel) to handle the following:
+### assignment #5: modify isMoveOk (in VikingModel) to handle the following:
 1. As usual, commit your changes to your local repo as follows.
    Run Android Studio, open your project (if it's not
    already open), and then select Commit from the Git menu.
@@ -176,5 +199,5 @@ Don't forget to comment your code (or else).
 1. Only the king may occupy a corner exit (in games that have corner exits).
 
 ---
-### assignment #5: coming soon!
+### assignment #6: coming soon!
 
