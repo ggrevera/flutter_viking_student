@@ -33,6 +33,11 @@ enum Square { ordinary, cornerExit, throne, edgeWinner, unavailable }
 //requires null safety: @JsonSerializable()
 abstract class VikingModel {
 
+    ///note: since this is static, there is only one. so do not include it 
+    /// when cloning.
+    static List<VikingModel> undoList = [];
+
+
     ///default board size
     static const int defaultSize = 11;
     final int rows;
@@ -254,6 +259,11 @@ abstract class VikingModel {
     /// uses isOkMove, performCapture, and setGameOverAndWinner
     bool performMove ( int fromR, int fromC, int toR, int toC ) {
         if (!isMoveOk(fromR, fromC, toR, toC))    return false;
+
+        //before we actually perform the move, clone the current state and add
+        // it to the undo list.
+        VikingModel.undoList.add( clone() );
+
         //perform the move
         pieces[toR][toC] = pieces[fromR][fromC];  //copy to dst
         pieces[fromR][fromC] = Piece.none;        //remove from src

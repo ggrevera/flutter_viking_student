@@ -19,9 +19,16 @@ import 'package:flutter_viking_student/View.dart' as view;
 //callbacks
 class Controller {
 
-  ///undo the most recent move
+  ///todo students undo the most recent move
   static void doUndo ( view.MyHomePageState state ) {
     print( 'doUndo' );
+    //state.setState(() {  // <-- caller is responsible for this
+
+    ///refer to current game via state. for example:
+    /// print( state.model );
+    ///state.clicks = [];
+
+    //});  // <-- ditto
   }
 
   ///start a new game of the specified type
