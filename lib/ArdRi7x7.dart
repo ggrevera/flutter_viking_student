@@ -19,7 +19,7 @@ class ArdRi7x7 extends Historical {
     @protected
     bool performCapture ( int mr, int mc ) {
         //todo
-        assert( false );
+        //assert( false );
         return false;
     }
 
