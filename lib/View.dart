@@ -296,7 +296,7 @@ class MyHomePageState extends State<MyHomePage> {
                   Icons.undo,
                   color: selectedColor,
                 ),
-                onPressed: () => setState(() => Controller.doUndo(this)),
+                onPressed: () => setState(() => Controller.doUndo(this))),
             IconButton(
               key: const Key('restore'), //for testing
               tooltip: 'restore',

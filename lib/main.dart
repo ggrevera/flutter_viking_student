@@ -54,7 +54,7 @@ class _MyAppState extends State<MyApp> {
 //---------------------------------------------------------------------------
 //splashscreen code from https://www.geeksforgeeks.org/splash-screen-in-flutter/
 // ***same problem as other solution!***
-void main ( List<String> args ) => runApp( MyApp0() );
+void main ( List<String> args ) => runApp( const MyApp0() );
 //or skip splash screen:
 //void main(List<String> args) => runApp(const SecondScreen());
 //void main ( ) {

@@ -33,13 +33,12 @@ enum Square { ordinary, cornerExit, throne, edgeWinner, unavailable }
 //requires null safety: @JsonSerializable()
 abstract class VikingModel {
 
-    ///note: since this is static, there is only one. so do not include it 
-    /// when cloning.
+    ///note: since this is static, there is only one. so do not include it when cloning.
     static List<VikingModel> undoList = [];
 
-
-    ///default board size
+    ///default board size (statics don't need to be cloned).
     static const int defaultSize = 11;
+
     final int rows;
     final int cols;
     final bool hasThrone;
