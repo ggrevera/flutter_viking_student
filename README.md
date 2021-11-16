@@ -138,21 +138,34 @@ We are going to concentrate on the game logic in the future.
    already open), and then select Commit from the Git menu.
    Enter 'finished assignment #2' in the Commit Message area, and then press Commit.
    If prompted for your email, enter it. Press the Commit button if asked about warnings.
-2. **Make a copy of your work.**
+1. **Make a copy of your work.**
    Others at GH&trade; have been hard at work on the gui and now it's ready! Before you
    add the new gui code to yours, make sure that you make a copy of the entire project 
    directory (folder) _before_ you pull from the repo.
-3. To incorporate changes on the remote repo with your code, you need to first run Android Studio,
+1. To incorporate changes on the remote repo with your code, you need to first run Android Studio,
    open your project, and then select Pull... from the Git menu.
    This will update your code with any changes.
-4. Before you can run **main.dart** in lib for the new ui, you need to **Get dependencies** first.
+1. Before you can run **main.dart** in lib for the new ui, you need to **Get dependencies** first.
    So do **Get dependencies** or **Tools --> Flutter --> Flutter Pub Get**.
-5. Before you can run the new gui, change **<no device selected>** to a specific device. You 
+1. Before you can run the new gui, change **<no device selected>** to a specific device. You 
    are only required to get one device working. Devices include windows desktop, 
    mac desktop, android phone or table, apple phone or tablet, or android device emulator.
-6. Run main.dart. Take a screen capture and save it in a file. That's it!
+1. Run main.dart. Take a screen capture and save it in a file. That's it!
 
 Notes: Ignore the message **Flutter device frame rate invalid** if it appears.
+
+If you are unable to get a gui version running please try the following
+sequence of commands to get the chrome version running (after you exit android
+studio and then open up a command prompt/terminal window):
+1. cd flutter_viking_student
+1. flutter pub get
+1. flutter config --enable-web
+1. flutter create .
+1. flutter run lib/main.dart
+
+Note to Windows users: If flutter is not in your path, try \flutter\bin\flutter
+above.
+
 
 ---
 ### assignment #4: is a move acceptable or not?
@@ -166,6 +179,10 @@ Here are situations that you should handle:
    already open), and then select Commit from the Git menu.
    Enter 'finished assignment #3' in the Commit Message area, and then press Commit.
    If prompted for your email, enter it. Press the Commit button if asked about warnings.
+1. **Make a copy of your work.**
+   Others at GH&trade; have been hard at work on the gui and now it's ready! Before you
+   add the new gui code to yours, make sure that you make a copy of the entire project 
+   directory (folder) _before_ you pull from the repo.
 1. To incorporate any changes on the remote repo with your code, you need to first run Android Studio,
    open your project, and then select Pull... from the Git menu.
    This will update your code with any changes.
@@ -188,7 +205,8 @@ Don't forget to comment your code (or else).
    already open), and then select Commit from the Git menu.
    Enter 'finished assignment #3' in the Commit Message area, and then press Commit.
    If prompted for your email, enter it. Press the Commit button if asked about warnings.
-   To incorporate any changes on the remote repo with your code, you need to first run Android Studio,
+1. Make a copy of your own work (see above).
+1. To incorporate any changes on the remote repo with your code, you need to first run Android Studio,
    open your project, and then select Pull... from the Git menu.
    This will update your code with any changes.
    Make sure that you can run your code without any errors before proceeding.
@@ -199,5 +217,53 @@ Don't forget to comment your code (or else).
 1. Only the king may occupy a corner exit (in games that have corner exits).
 
 ---
-### assignment #6: coming soon!
+### assignment #6: clone and equals.
+1. Commit your changes to your local repo (see above).
+1. Make a copy of your own work (see above).
+1. Incorporate any changes on the remote repo with your code (see above).
+1. Implement clone (AKA deep copy) by finishing copyValues in VikingModel.
+1. Implement equals method, ==, in VikingModel.
+
+---
+### assignment #7: implement hashcode in VikingModel.dart.
+<p>Read chapter 3 of "Effective Java" by Joshua Bloch, 3rd ed., 2018 (freely and legally available 
+from <a href="https://raw.githubusercontent.com/muhdkhokhar/test/master/Joshua%20Bloch%20-%20Effective%20Java%20(3rd)%20-%202018.pdf">https://raw.githubusercontent.com/muhdkhokhar/test/master/Joshua%20Bloch%20-%20Effective%20Java%20(3rd)%20-%202018.pdf</a>), 
+especially Item 11. Also visit <a href="https://dart-lang.github.io/linter/lints/hash_and_equals.html">https://dart-lang.github.io/linter/lints/hash_and_equals.html</a> 
+for a similar sentiment expressed for dart.</p>
+<p>Add a hash code function to VikingModel as follows (if not already there; I may have updated the 
+repo):</p>
+<pre>        @override
+        int get hashCode {
+            return 0;
+        }
+</pre>
+<p>Using the java_hashcode_wikipedia.pdf file below as a guide, complete hashCode. You may use the 
+built-in hashCode values for all individual s<sub>i</sub> data values contained in a VikingModel 
+instance when calculating it, if you wish. You might need to include the following import: 
+import 'dart:math';</p>
+<p><a title="java_hashcode_wikipedia.pdf" href="/courses/25881/files/3562970?wrap=1">java_hashcode_wikipedia.pdf</a>.</p>
+
+---
+### assignment #8: undo and repeats.
+1. Commit your changes to your local repo (see above).
+1. Make a copy of your own work (see above).
+1. Incorporate any changes on the remote repo with your code (see above).
+1. Implement undo. (note: requires a working clone method.)
+1. Implement checkThreeRepeatedMoves. (note: requires a working equals method.)
+
+---
+### assignment #9: at least one move.
+1. Commit your changes to your local repo (see above).
+1. Make a copy of your own work (see above).
+1. Incorporate any changes on the remote repo with your code (see above).
+1. Complete hasAtLeastOneMove in VikingModel.
+
+---
+### assignment #10: winners and losers (in progress).
+
+---
+### assignment #11: begin handling captures by implementing performCapture (in progress).
+
+---
+### assignment #12: modify isMoveOk to handle more possible moves (in progress).
 
