@@ -245,11 +245,21 @@ import 'dart:math';</p>
 
 ---
 ### assignment #8: undo and repeats.
-1. Commit your changes to your local repo (see above).
-1. Make a copy of your own work (see above).
-1. Incorporate any changes on the remote repo with your code (see above).
-1. Implement undo. (note: requires a working clone method.)
-1. Implement checkThreeRepeatedMoves. (note: requires a working equals method.)
+This assignment is relatively easy.
+
+1. Implement the capability to undo moves. (This requires a working clone 
+   method.) Note the undo list in VikingModel is a list of VikingModel 
+   instances. performMove adds a clone of this to the undo list, and then 
+   performs the move. For this part, all one has to do is to complete the 
+   todo regarding undo in cli_main.dart. Similarly, complete doUndo in 
+   Controller for the graphical version of the game.
+1. Complete checkThreeRepeatedMoves. We will use a very simple definition 
+   (of what a "repeated move" is exactly) for this. A player loses when 
+   they perform the same exact move 3 times in a row. Note that performMove 
+   calls setGameOverAndWinner which in turn calls checkThreeRepeatedMoves. 
+   checkThreeRepeatedMoves should return true if the current player has 
+   repeated the same move 3 times in a row (not over the entire game); 
+   false otherwise.
 
 ---
 ### assignment #9: at least one move.
